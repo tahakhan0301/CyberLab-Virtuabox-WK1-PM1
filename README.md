@@ -96,22 +96,16 @@ CyberLab-Virtuabox-WK1-PM1/
 
 ## Lab Screenshots
 
-The following screenshots document the lab environment and its configuration.
-
-### 1. Kali Linux Desktop
-
+### Kali Linux Desktop
 ![Kali Linux Desktop](screenshots/kali-mainpage.png)
 
-### 2. Kali Linux Network Information
-
+### Kali Linux Network Information
 ![Kali Linux Network Information](screenshots/kali-network-info.png)
 
-### 3. VirtualBox Main Interface
-
+### VirtualBox Main Interface
 ![VirtualBox Main Interface](screenshots/Screenshot%202026-10-30%20020042.png)
 
-### 4. VirtualBox Network Settings
-
+### VirtualBox Network Settings
 ![VirtualBox Network Settings](screenshots/Screenshot%202026-10-30%20020146.png)
 
 ## Basic Network Diagnostics
