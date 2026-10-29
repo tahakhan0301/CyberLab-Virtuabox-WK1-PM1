@@ -144,8 +144,8 @@ Read [`SECURITY.md`](SECURITY.md) for more details.
 
 ## Project Status
 
-**Status:** Portfolio project in progress.  
-**Evidence:** Setup results and screenshots should be added after the steps are performed and verified on the author's own system.
+**Status:** Portfolio project is done.  
+**Evidence:** Setup results and screenshots are added after the steps are performed and verified on the own system.
 
 ## Author
 
