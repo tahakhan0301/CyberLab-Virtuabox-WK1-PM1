@@ -149,10 +149,8 @@ Read [`SECURITY.md`](SECURITY.md) for more details.
 
 ## Author
 
-**Name:** `YOUR NAME`  
-**GitHub:** `YOUR GITHUB PROFILE URL`  
+**Name:** `Taha Khan`  
+**GitHub:** `https://github.com/tahakhan0301`  
 **Focus:** Cybersecurity | Linux | Networking
 
 ---
-
-*This repository is an educational lab guide. Commands and settings must be adapted to the actual environment and verified before use.*
