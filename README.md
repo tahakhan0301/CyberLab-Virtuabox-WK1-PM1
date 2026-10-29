@@ -164,7 +164,8 @@ Read [`SECURITY.md`](SECURITY.md) for more details.
 ## Author
 
 **Name:** `Taha Khan`  
-**GitHub:** `https://github.com/tahakhan0301`  
+**GitHub:** `https://github.com/tahakhan0301`
+**Linkedin:** ` https://www.linkedin.com/in/taha-khan-a34487245?utm_source=share_via&utm_content=profile&utm_medium=member_ios`
 **Focus:** Cybersecurity | Linux | Networking
 
 ---
