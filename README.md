@@ -184,9 +184,9 @@ See [SECURITY.md](SECURITY.md) for additional guidance.
 
 ## Project Status
 
-**Status:** In progress.
+**Status:** done.
 
-The initial lab environment and screenshots have been prepared. Network validation and other remaining steps will be documented as they are completed and verified.
+The initial lab environment and screenshots have been prepared.
 
 ## Author
 
