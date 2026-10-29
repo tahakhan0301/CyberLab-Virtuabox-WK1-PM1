@@ -96,19 +96,19 @@ Hardware needs depend on your host system and the VM configuration you choose.
 
 ### 1. Kali Linux Desktop
 
-![Kali Linux Desktop](screenshots/kali-mainpage.png)
+![Kali Linux Desktop](./screenshots/kali-mainpage.png)
 
 ### 2. Kali Linux Network Information
 
-![Kali Linux Network Information](screenshots/kali-network-info.png)
+![Kali Linux Network Information](./screenshots/kali-network-info.png)
 
 ### 3. VirtualBox Main Interface
 
-![VirtualBox Main Interface](screenshots/Screenshot%202026-10-30%20020042.png)
+![VirtualBox Main Interface](./screenshots/Screenshot%202026-10-30%20020042.png)
 
 ### 4. VirtualBox Network Settings
 
-![VirtualBox Network Settings](screenshots/Screenshot%202026-10-30%20020146.png)
+![VirtualBox Network Settings](./screenshots/Screenshot%202026-10-30%20020146.png)
 
 
 ## Basic Network Diagnostics
