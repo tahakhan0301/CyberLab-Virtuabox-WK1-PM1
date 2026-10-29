@@ -1,12 +1,23 @@
-# Screenshots
+# Lab Screenshots
 
-Add your own screenshots here after completing the corresponding lab steps.
+This folder contains screenshots documenting the CyberLab virtual cybersecurity environment, including Kali Linux and Oracle VirtualBox configuration.
 
-Suggested files:
-- `01-vm-settings.png`
-- `02-network-adapter.png`
-- `03-ip-address-output.png`
-- `04-route-and-dns-check.png`
-- `05-baseline-snapshot.png`
+## 1. Kali Linux Desktop
 
-Only include screenshots captured from your own environment. Crop for clarity and hide usernames, email addresses, public IPs if sensitive, credentials, tokens, and unrelated personal information. Do not use sample screenshots as evidence that you performed a test.
+![Kali Linux Desktop](kali-mainpage.png)
+
+## 2. Kali Linux Network Information
+
+![Kali Linux Network Information](kali-network-info.png)
+
+## 3. VirtualBox Main Interface
+
+![VirtualBox Main Interface](Screenshot%202026-10-30%20020042.png)
+
+## 4. VirtualBox Network Settings
+
+![VirtualBox Network Settings](Screenshot%202026-10-30%20020146.png)
+
+---
+
+**Note:** These screenshots are intended to document the lab setup. Ensure all images are uploaded to this same folder and filenames match exactly.
