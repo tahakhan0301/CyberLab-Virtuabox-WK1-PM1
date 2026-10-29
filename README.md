@@ -1,61 +1,61 @@
 # CyberLab | Virtual Cybersecurity Environment
 
 <p align="center">
-  <strong>A documented, isolated lab for cybersecurity learning and network fundamentals.</strong>
+  <strong>A documented virtual environment for cybersecurity learning and network fundamentals.</strong>
 </p>
 
 <p align="center">
   <img alt="Platform" src="https://img.shields.io/badge/Platform-Kali%20Linux-557C94">
   <img alt="Virtualization" src="https://img.shields.io/badge/Virtualization-VirtualBox-183A61">
   <img alt="Focus" src="https://img.shields.io/badge/Focus-Lab%20Setup%20%7C%20Networking-2F855A">
-  <img alt="Status" src="https://img.shields.io/badge/Status-Learning%20Project-orange">
+  <img alt="Status" src="https://img.shields.io/badge/Status-In%20Progress-orange">
 </p>
 
 ## Overview
 
-CyberLab documents the design and setup of a virtual environment for cybersecurity education. It brings together virtual-machine preparation, network configuration, connectivity checks, baseline snapshots, and structured troubleshooting notes in one maintainable repository.
+CyberLab is a learning project that documents the preparation of a virtual cybersecurity environment using Kali Linux and Oracle VirtualBox. It covers virtual machine setup, network configuration, basic diagnostics, snapshots, and structured troubleshooting documentation.
 
-The goal is to demonstrate a repeatable workflow and clear technical documentation—not to claim tests or configurations that have not actually been completed. Replace the placeholders in this repository with evidence from your own lab as you work through the guide.
+The project aims to establish a repeatable lab setup and maintain clear technical documentation. Features and test results are documented as they are completed and verified.
 
 ## Objectives
 
 - Prepare a Kali Linux virtual machine for controlled learning.
-- Understand virtual networking modes and document the chosen configuration.
-- Validate IP addressing, routing, and DNS separately.
-- Create a recoverable baseline using a VM snapshot.
+- Understand virtual networking modes and document the selected configuration.
+- Inspect IP addressing, routing, and DNS settings.
+- Create a recoverable baseline using a virtual machine snapshot.
 - Record setup issues, diagnostic commands, and verified resolutions.
 - Build a foundation for future defensive security and monitoring exercises.
 
 ## Lab Architecture
 
 ```text
-                 Host Computer
-                      |
-                 VirtualBox
-                      |
-               Kali Linux VM
-                      |
-          Configured Virtual Network
-                      |
-       Connectivity checks and lab notes
+Host Computer
+     |
+Oracle VirtualBox
+     |
+Kali Linux Virtual Machine
+     |
+Configured Virtual Network
+     |
+Network Diagnostics and Lab Documentation
 ```
 
-> The diagram is conceptual. Adapt it to your actual VirtualBox network mode and any additional VMs you configure.
+> This is a conceptual diagram. The actual network design should reflect the configuration used in the lab.
 
 ## Technology Stack
 
 | Component | Role |
-| --- | --- |
+|---|---|
 | Kali Linux | Linux and cybersecurity learning environment |
 | Oracle VirtualBox | Virtual machine management |
-| Virtual networking | Controlled connectivity between lab systems |
-| GitHub | Version control and portfolio documentation |
-| Markdown | Guides, notes, and troubleshooting records |
+| Virtual Networking | Network configuration and connectivity |
+| GitHub | Version control and project documentation |
+| Markdown | Technical guides and lab notes |
 
-## Repository Map
+## Repository Structure
 
 ```text
-cyberlab-virtual-security-environment/
+CyberLab-Virtuabox-WK1-PM1/
 ├── README.md
 ├── SECURITY.md
 ├── CONTRIBUTING.md
@@ -68,109 +68,129 @@ cyberlab-virtual-security-environment/
 │   ├── validation-checklist.md
 │   └── troubleshooting.md
 ├── screenshots/
-│   └── README.md
+│   ├── README.md
+│   ├── kali-mainpage.png
+│   ├── kali-network-info.png
+│   ├── Screenshot 2026-10-30 020042.png
+│   └── Screenshot 2026-10-30 020146.png
 └── diagrams/
     └── README.md
 ```
 
 ## Prerequisites
 
-- A computer capable of running hardware virtualization.
-- VirtualBox installed from its official source.
-- A Kali Linux image downloaded from the official Kali website.
-- Enough memory and disk space for your selected VM configuration.
+- A computer that supports hardware virtualization.
+- Oracle VirtualBox installed from its official source.
+- A Kali Linux image from the official Kali Linux website.
+- Sufficient memory and disk space for the chosen virtual machine configuration.
 - Basic familiarity with terminal commands.
-
-Hardware needs depend on your host system and the VM configuration you choose.
 
 ## Getting Started
 
-1. Read [`docs/installation-guide.md`](docs/installation-guide.md).
+1. Review the [installation guide](docs/installation-guide.md).
 2. Create or import a Kali Linux virtual machine.
-3. Choose and document a suitable virtual network mode using [`docs/network-configuration.md`](docs/network-configuration.md).
-4. Run the checks listed in [`docs/validation-checklist.md`](docs/validation-checklist.md).
-5. Capture your own screenshots and add them to `screenshots/`.
-6. Record real observations and issues in [`LAB-NOTES.md`](LAB-NOTES.md).
+3. Review the [network configuration guide](docs/network-configuration.md).
+4. Follow the [validation checklist](docs/validation-checklist.md).
+5. Save genuine lab screenshots in the `screenshots/` directory.
+6. Record actual observations and issues in [LAB-NOTES.md](LAB-NOTES.md).
 
 ## Lab Screenshots
 
+The following screenshots document the lab environment and its configuration.
+
 ### 1. Kali Linux Desktop
 
-![Kali Linux Desktop](./screenshots/kali-mainpage.png)
+![Kali Linux Desktop](screenshots/kali-mainpage.png)
 
 ### 2. Kali Linux Network Information
 
-![Kali Linux Network Information](./screenshots/kali-network-info.png)
+![Kali Linux Network Information](screenshots/kali-network-info.png)
 
 ### 3. VirtualBox Main Interface
 
-![VirtualBox Main Interface](./screenshots/Screenshot%202026-10-30%20020042.png)
+![VirtualBox Main Interface](screenshots/Screenshot%202026-10-30%20020042.png)
 
 ### 4. VirtualBox Network Settings
 
-![VirtualBox Network Settings](./screenshots/Screenshot%202026-10-30%20020146.png)
-
+![VirtualBox Network Settings](screenshots/Screenshot%202026-10-30%20020146.png)
 
 ## Basic Network Diagnostics
 
-These commands inspect local network configuration. Run them in your Kali terminal:
+The following commands can be used to inspect the Kali Linux network configuration.
+
+Display network interfaces and IP addresses:
 
 ```bash
 ip address
+```
+
+Display the routing table:
+
+```bash
 ip route
+```
+
+Inspect DNS resolver settings:
+
+```bash
 cat /etc/resolv.conf
 ```
 
-If your lab is intended to have internet access, you may separately test connectivity to a known public IP and DNS resolution:
+If internet access is expected, connectivity and DNS resolution can be checked separately:
 
 ```bash
 ping -c 4 1.1.1.1
 getent hosts example.com
 ```
 
-A failed ping alone does not prove that all connectivity is broken; ICMP may be blocked. Record the result and test the relevant layer before drawing a conclusion.
+A failed ping does not necessarily mean all connectivity is unavailable, because ICMP traffic may be blocked. Record actual command output before drawing conclusions.
 
 ## Validation Checklist
 
-- [ ] Kali Linux VM boots successfully.
+Update this checklist as each item is completed and verified.
+
+- [ ] Kali Linux virtual machine boots successfully.
 - [ ] The expected network interface is visible.
-- [ ] IP address and subnet match the intended design.
-- [ ] Default route is understood and documented.
-- [ ] DNS configuration is inspected.
-- [ ] Connectivity tests are recorded, including failures.
-- [ ] A baseline VM snapshot is created.
-- [ ] Screenshots contain no passwords, tokens, or private information.
-- [ ] Documentation matches the configuration actually tested.
+- [ ] IP address and subnet are checked against the intended configuration.
+- [ ] The default route is inspected and understood.
+- [ ] DNS resolver settings are inspected.
+- [ ] Connectivity checks are performed and their results recorded.
+- [ ] A baseline virtual machine snapshot is created.
+- [ ] Screenshots are reviewed for sensitive information.
+- [ ] Documentation reflects the configuration actually tested.
 
 ## Troubleshooting
 
-Start with [`docs/troubleshooting.md`](docs/troubleshooting.md). For package-manager lock errors, identify the process holding the lock and allow any active package operation to finish. Do not delete lock files manually or terminate package-management processes blindly.
+Refer to the [troubleshooting guide](docs/troubleshooting.md) for common setup issues.
+
+For package-manager lock errors, identify whether a package operation is already running and allow it to finish. Avoid deleting lock files manually or terminating package-management processes blindly.
 
 ## Responsible Use
 
-Use this environment for learning and authorized testing only. Keep intentionally vulnerable systems isolated from untrusted networks. Test only systems you own or have explicit permission to assess. Do not commit passwords, private keys, tokens, personal data, or sensitive network details.
+Use this environment for education and authorized testing only. Keep intentionally vulnerable systems isolated from untrusted networks. Test only systems you own or have explicit permission to assess.
 
-Read [`SECURITY.md`](SECURITY.md) for more details.
+Do not commit passwords, private keys, access tokens, personal data, or sensitive network information.
+
+See [SECURITY.md](SECURITY.md) for additional guidance.
 
 ## Roadmap
 
-- [ ] Complete VM installation and document host/VM settings.
-- [ ] Add verified network configuration details.
-- [ ] Add original screenshots and a topology diagram.
+- [ ] Complete and document the virtual machine configuration.
+- [ ] Record the selected network mode and relevant settings.
+- [ ] Perform and document network validation.
 - [ ] Record troubleshooting examples and confirmed resolutions.
 - [ ] Add a defensive log-analysis exercise.
-- [ ] Add a second lab VM only when the network is deliberately isolated and documented.
+- [ ] Consider a second lab virtual machine when an appropriately isolated network is configured.
 
 ## Project Status
 
-**Status:** Portfolio project is done.  
-**Evidence:** Setup results and screenshots are added after the steps are performed and verified on the own system.
+**Status:** In progress.
+
+The initial lab environment and screenshots have been prepared. Network validation and other remaining steps will be documented as they are completed and verified.
 
 ## Author
 
-**Name:** `Taha Khan`  
-**GitHub:** `https://github.com/tahakhan0301`
-**Linkedin:** ` https://www.linkedin.com/in/taha-khan-a34487245?utm_source=share_via&utm_content=profile&utm_medium=member_ios`
+**Name:** Taha Khan  
+**GitHub:** [tahakhan0301](https://github.com/tahakhan0301)  
+**LinkedIn:** [Connect with me on LinkedIn](https://www.linkedin.com/in/taha-khan-a34487245/)  
 **Focus:** Cybersecurity | Linux | Networking
-
----
